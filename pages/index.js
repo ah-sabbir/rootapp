@@ -43,7 +43,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
         />
       </noscript> */}
-        <title>this is my test application</title>
+        <title>Fantasy Motion Studio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-screen h-screen  bg-black box-border flex">
@@ -53,7 +53,7 @@ export default function Home() {
             {text}
             <span className="animate-blinker">|</span>
           </h1> */}
-          <h1 className=" text-yellow-600 uppercase font-Qahiri font-bold">Fatasymotion studio</h1>
+          <h1 className=" text-yellow-600 uppercase font-Qahiri font-bold">Fantasy Motion Studio</h1>
         </div>
       </div>
     </div>
