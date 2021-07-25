@@ -5,18 +5,18 @@ export default function navigation() {
     //     console.log("navigation component")
     // })
     return (
-        <div className="flex w-40 h-full justify-center items-center bg-green-900">
-                <ul className="flex-col">
-                    <li className="px-2 py-1 mx-1 font-Qahiri font-bold text-red-500 tracking-wider uppercase hover:bg-blue-700 rounded-md">
+        <div className="flex w-40 h-full justify-center items-center bg-myColor-leftSide text-white-light">
+                <ul className="flex-col w-full">
+                    <li className="px-2 py-1 mx-1 font-Qahiri font-bold tracking-wider uppercase hover:bg-a_hover-bg text-center">
                         <a href="#">Home</a>
                     </li>
-                    <li className="px-2 py-1 mx-1  font-Qahiri font-bold text-red-500 tracking-wider uppercase hover:bg-blue-700 rounded-md">
+                    <li className="px-2 py-1 mx-1  font-Qahiri font-bold tracking-wider uppercase hover:bg-a_hover-bg text-center">
                         <a href="#">About</a>
                     </li>
-                    <li className="px-2 py-1 mx-1  font-Qahiri font-bold text-red-500 tracking-wider uppercase hover:bg-blue-700 rounded-md">
+                    <li className="px-2 py-1 mx-1  font-Qahiri font-bold  tracking-wider uppercase hover:bg-a_hover-bg text-center">
                         <a href="#">Contact</a>
                     </li>
-                    <li className="px-2 py-1 mx-1  font-Qahiri font-bold text-red-500 tracking-wider uppercase hover:bg-blue-700 rounded-md">
+                    <li className="px-2 py-1 mx-1  font-Qahiri font-bold tracking-wider uppercase hover:bg-a_hover-bg text-center">
                         <a href="#">Blog</a>
                     </li>
                 </ul>

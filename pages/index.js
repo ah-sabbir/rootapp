@@ -32,21 +32,11 @@ export default function Home() {
   return (
     <div>
       <Head>
-      {/* <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
-      /> */}
-      {/* <noscript>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-        />
-      </noscript> */}
         <title>Fantasy Motion Studio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-screen h-screen  bg-black box-border flex">
+      <div className=""></div>
+      <div className="w-screen h-screen  bg-black box-border flex bg-gray-darkest">
         <Navigation/>
         <div className="w-full h-auto flex justify-center items-center">
           {/* <h1 className=" font-mono text-5xl font-bold uppercase ">
