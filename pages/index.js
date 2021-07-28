@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import Navigation from '../components/navigation/Navigation'
+import Navigation from '../components/navigation/navBar'
 import logoImage from '../public/favicon.png'
 
 export default function Home() {
