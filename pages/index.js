@@ -2,9 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Navigation from '../components/navigation/Navigation'
-// import styles from '../styles/Home.module.css'
-import busWindowImage from '../images/bus-window-side.jpg'
-
+import logoImage from '../public/favicon.png'
 
 export default function Home() {
   const [text, setText] = useState("")
@@ -32,18 +30,28 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Fantasy Motion Studio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>task time</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
-      <div className=""></div>
+      <div className="header"></div>
       <div className="w-screen h-screen  bg-black box-border flex bg-gray-darkest">
         <Navigation/>
-        <div className="w-full h-auto flex justify-center items-center">
+        <div className=" flex-col w-full h-full items-center">
           {/* <h1 className=" font-mono text-5xl font-bold uppercase ">
             {text}
             <span className="animate-blinker">|</span>
           </h1> */}
-          <h1 className=" text-yellow-600 uppercase font-Qahiri font-bold">Fantasy Motion Studio</h1>
+          <div className="flex h-1/2 items-end justify-center">
+            {/* <h1 className="text-yellow-600 uppercase tracking-widest font-Qahiri font-bold">tasktime</h1> */}
+            <Image 
+              src={logoImage} 
+              alt="Picture of the author"
+              width={350}
+              height={250} />
+          </div>
+          <div className="flex h-1/2 items-start justify-center">
+            {/* <p className="text-white-light uppercase">track the task to be faster.</p> */}
+          </div>
         </div>
       </div>
     </div>

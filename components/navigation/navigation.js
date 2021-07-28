@@ -5,7 +5,8 @@ export default function navigation() {
     //     console.log("navigation component")
     // })
     return (
-        <div className="flex w-40 h-full justify-center items-center bg-myColor-leftSide text-white-light">
+        <div className="flex w-1/8 h-full justify-center items-center bg-myColor-leftSide text-white-light">
+            {/* <div className="flex w-1/8 h-full justify-center items-center bg-myColor-leftSide text-white-light"> */}
                 <ul className="flex-col w-full">
                     <li className="px-2 py-1 mx-1 font-Qahiri font-bold tracking-wider uppercase hover:bg-a_hover-bg text-center">
                         <a href="#">Home</a>
