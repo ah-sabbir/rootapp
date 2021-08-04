@@ -1,5 +1,5 @@
-import {useEffect} from 'react'
-
+import {useEffect} from 'react';
+import Link from 'next/link';
 export default function navigation() {
     // useEffect(()=>{
     //     console.log("navigation component")
@@ -21,7 +21,9 @@ export default function navigation() {
                         <a href="#">Blog</a>
                     </li>
                     <li className="px-2 py-1 mx-1  font-Qahiri font-bold tracking-wider uppercase hover:bg-a_hover-bg text-center">
-                        <a href="/auth/registration">Sign up</a>
+                        <Link href="/auth/registration">
+                            <a >Sign up</a>
+                        </Link>
                     </li>
                 </ul>
         </div>

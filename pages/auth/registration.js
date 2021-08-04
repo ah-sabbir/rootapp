@@ -14,9 +14,11 @@ export default function Login() {
                     <h2 className=" w-full text-center my-5">track the tasks to be faster.</h2>
                     <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0 justify-center">
                       <div className="inline-flex rounded-md shadow w-2/4 justify-center bg-blue-light">
-                        <a href="/auth/login" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-                          Login
-                        </a>
+                          <Link href="/auth/login">
+                            <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                            Login
+                            </a>
+                        </Link>
                       </div>
                     </div>
             </div>
