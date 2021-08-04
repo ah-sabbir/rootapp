@@ -20,6 +20,9 @@ export default function navigation() {
                     <li className="px-2 py-1 mx-1  font-Qahiri font-bold tracking-wider uppercase hover:bg-a_hover-bg text-center">
                         <a href="#">Blog</a>
                     </li>
+                    <li className="px-2 py-1 mx-1  font-Qahiri font-bold tracking-wider uppercase hover:bg-a_hover-bg text-center">
+                        <a href="/auth/registration">Sign up</a>
+                    </li>
                 </ul>
         </div>
     );
