@@ -41,7 +41,6 @@ export default function Login() {
                 </div>
                 <button className="  bg-blue-dark hover:bg-green-700 text-white uppercase text-sm font-semibold px-4 py-2 inline-flex rounded-md shadow">submit</button>
                 </form>
-                <a className="text-blue-700 text-center text-sm" href="/login">Forgot password?</a>
                 </div>
         </div>
     </div>
