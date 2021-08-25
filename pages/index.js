@@ -226,7 +226,7 @@ export default function Home() {
                         {/* <!--Graph Card--> */}
                         <div className="bg-gray-900 border border-gray-800 rounded shadow">
                             <div className="border-b border-gray-800 p-3">
-                                <h5 className="font-bold uppercase text-gray-600">Graph</h5>
+                                <h5 className="font-bold uppercase text-gray-600">Mouse Click Graph</h5>
                             </div>
                             <div className="p-5">
                                 <canvas id="chartjs-7" className="chartjs" width="undefined" height="undefined"></canvas>
@@ -268,7 +268,7 @@ export default function Home() {
                         {/* <!--Graph Card--> */}
                         <div className="bg-gray-900 border border-gray-800 rounded shadow">
                             <div className="border-b border-gray-800 p-3">
-                                <h5 className="font-bold uppercase text-gray-600">Graph</h5>
+                                <h5 className="font-bold uppercase text-gray-600">Keyboard Keypress Graph</h5>
                             </div>
                             <div className="p-5">
                                 <canvas id="chartjs-0" className="chartjs" width="undefined" height="undefined"></canvas>
@@ -297,7 +297,7 @@ export default function Home() {
                         {/* <!--Graph Card--> */}
                         <div className="bg-gray-900 border border-gray-800 rounded shadow">
                             <div className="border-b border-gray-800 p-3">
-                                <h5 className="font-bold uppercase text-gray-600">Graph</h5>
+                                <h5 className="font-bold uppercase text-gray-600">Productivity</h5>
                             </div>
                             <div className="p-5">
                                 <canvas id="chartjs-1" className="chartjs" width="undefined" height="undefined"></canvas>
