@@ -159,7 +159,7 @@ export default function Home() {
                                     <div className="rounded p-3 bg-blue-600"><i className="far fa-calendar-alt fa-2x fa-fw fa-inverse"></i></div>
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
-                                    <h5 className="font-bold uppercase text-gray-400">August -> Attendance</h5>
+                                    <h5 className="font-bold uppercase text-gray-400">August - Attendance</h5>
                                     <h3 className="font-bold text-3xl text-gray-600">21 days</h3>
                                 </div>
                             </div>
