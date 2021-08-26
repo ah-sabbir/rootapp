@@ -44,7 +44,7 @@ export default function Home() {
       <meta name="keywords" content="keywords,here"/>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossOrigin="anonymous"/>
       <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"/> 
-      <script async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossOrigin="anonymous"/>
+      {/* <script async src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossOrigin="anonymous"/> */}
       </Head>
       <div id="header" className="bg-gray-900 fixed w-full z-10 top-0 shadow">
         <div className="w-full container mx-auto flex flex-wrap items-center mt-0 pt-3 pb-3 md:pb-0">
@@ -130,11 +130,11 @@ export default function Home() {
                         <div className="bg-gray-900 border border-gray-800 rounded shadow p-2">
                             <div className="flex flex-row items-center">
                                 <div className="flex-shrink pr-4">
-                                    <div className="rounded p-3 bg-green-600"><i className="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div>
+                                    <div className="rounded p-3 bg-green-600"><i className="fas fa-clock fa-2x fa-fw fa-inverse"></i></div>
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
-                                    <h5 className="font-bold uppercase text-gray-400">Total Revenue</h5>
-                                    <h3 className="font-bold text-3xl text-gray-600">$3249 <span className="text-green-500"><i className="fas fa-caret-up"></i></span></h3>
+                                    <h5 className="font-bold uppercase text-gray-400">Total Working Hours</h5>
+                                    <h3 className="font-bold text-3xl text-gray-600">240 Hours <span className="text-green-500"><i className="fas fa-caret-up"></i></span></h3>
                                 </div>
                             </div>
                         </div>
@@ -145,11 +145,11 @@ export default function Home() {
                         <div className="bg-gray-900 border border-gray-800 rounded shadow p-2">
                             <div className="flex flex-row items-center">
                                 <div className="flex-shrink pr-4">
-                                    <div className="rounded p-3 bg-pink-600"><i className="fas fa-users fa-2x fa-fw fa-inverse"></i></div>
+                                    <div className="rounded p-3 bg-pink-600"><i className="far fa-clock fa-2x fa-fw fa-inverse" aria-hidden="true"></i></div>
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
-                                    <h5 className="font-bold uppercase text-gray-400">Total Users</h5>
-                                    <h3 className="font-bold text-3xl text-gray-600">249 <span className="text-pink-500"><i className="fas fa-exchange-alt"></i></span></h3>
+                                    <h5 className="font-bold uppercase text-gray-400">current working hours</h5>
+                                    <h3 className="font-bold text-3xl text-gray-600">7 Hours <span className="text-pink-500"><i className="fas fa-exchange-alt"></i></span></h3>
                                 </div>
                             </div>
                         </div>
@@ -160,10 +160,10 @@ export default function Home() {
                         <div className="bg-gray-900 border border-gray-800 rounded shadow p-2">
                             <div className="flex flex-row items-center">
                                 <div className="flex-shrink pr-4">
-                                    <div className="rounded p-3 bg-yellow-600"><i className="fas fa-user-plus fa-2x fa-fw fa-inverse"></i></div>
+                                    <div className="rounded p-3 bg-yellow-600"><i className=" fa-2x fa-fw fa-inverse"></i></div>
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
-                                    <h5 className="font-bold uppercase text-gray-400">New Users</h5>
+                                    <h5 className="font-bold uppercase text-gray-400">another</h5>
                                     <h3 className="font-bold text-3xl text-gray-600">2 <span className="text-yellow-600"><i className="fas fa-caret-up"></i></span></h3>
                                 </div>
                             </div>
@@ -175,11 +175,11 @@ export default function Home() {
                         <div className="bg-gray-900 border border-gray-800 rounded shadow p-2">
                             <div className="flex flex-row items-center">
                                 <div className="flex-shrink pr-4">
-                                    <div className="rounded p-3 bg-blue-600"><i className="fas fa-server fa-2x fa-fw fa-inverse"></i></div>
+                                    <div className="rounded p-3 bg-blue-600"><i className="far fa-calendar-alt fa-2x fa-fw fa-inverse"></i></div>
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
-                                    <h5 className="font-bold uppercase text-gray-400">Server Uptime</h5>
-                                    <h3 className="font-bold text-3xl text-gray-600">152 days</h3>
+                                    <h5 className="font-bold uppercase text-gray-400">August -> Attendance</h5>
+                                    <h3 className="font-bold text-3xl text-gray-600">21 days</h3>
                                 </div>
                             </div>
                         </div>
@@ -193,8 +193,8 @@ export default function Home() {
                                     <div className="rounded p-3 bg-indigo-600"><i className="fas fa-tasks fa-2x fa-fw fa-inverse"></i></div>
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
-                                    <h5 className="font-bold uppercase text-gray-400">To Do List</h5>
-                                    <h3 className="font-bold text-3xl text-gray-600">7 tasks</h3>
+                                    <h5 className="font-bold uppercase text-gray-400">Productivity</h5>
+                                    <h3 className="font-bold text-3xl text-gray-600">75%</h3>
                                 </div>
                             </div>
                         </div>
@@ -205,10 +205,10 @@ export default function Home() {
                         <div className="bg-gray-900 border border-gray-800 rounded shadow p-2">
                             <div className="flex flex-row items-center">
                                 <div className="flex-shrink pr-4">
-                                    <div className="rounded p-3 bg-red-600"><i className="fas fa-inbox fa-2x fa-fw fa-inverse"></i></div>
+                                    <div className="rounded p-3 bg-red-600"><i className=" fa-2x fa-fw fa-inverse"></i></div>
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
-                                    <h5 className="font-bold uppercase text-gray-400">Issues</h5>
+                                    <h5 className="font-bold uppercase text-gray-400">another</h5>
                                     <h3 className="font-bold text-3xl text-gray-600">3 <span className="text-red-500"><i className="fas fa-caret-up"></i></span></h3>
                                 </div>
                             </div>
