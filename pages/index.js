@@ -5,26 +5,7 @@ import Navigation from '../components/navigation/navBar'
 import logoImage from '../public/favicon.png'
 
 export default function Home() {
-  const [text, setText] = useState("")
-  const [fullText, setFullText] = useState("Your source of leading.")
-  const [index, setIndex] = useState(0)
-  const [reverseIndex, setReverseIndex] = useState(fullText.length)
-
-    useEffect(() => {
-      if (index < fullText.length) {
-        setTimeout(() => {
-          setText(text + fullText[index])
-          setIndex(index + 1)
-          setReverseIndex(index - 1)
-        }, 150)
-      }
-      // if( index <= fullText.length){
-      //   setInterval(() => {
-      //     setText(text + fullText[index])
-      //     setIndex(index + 1)
-      //   }, 500);
-      // }
-    }, [index])
+    
 
     const myLoader = ({ src }) => {
       return {src}
