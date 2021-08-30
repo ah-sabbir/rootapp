@@ -3,9 +3,26 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Navigation from '../components/navigation/navBar'
 import logoImage from '../public/favicon.png'
+import axios from 'axios'
 
 export default function Home() {
-    
+    const [data, setData] = useState([])
+
+    useEffect(()=>{
+        loadData()
+    })
+
+    const loadData = async ()=>{
+        const res = await fetch("https://jsonplaceholder.typicode.com/users",
+        {
+            mode: 'cors',
+            headers: {
+              'Access-Control-Allow-Origin':'*'
+            }
+        }
+        )
+        console.log(await res.json())
+    }
 
     const myLoader = ({ src }) => {
       return {src}
@@ -144,8 +161,8 @@ export default function Home() {
                                     <div className="rounded p-3 bg-yellow-600"><i className=" fa-2x fa-fw fa-inverse"></i></div>
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
-                                    <h5 className="font-bold uppercase text-gray-400">another</h5>
-                                    <h3 className="font-bold text-3xl text-gray-600">2 <span className="text-yellow-600"><i className="fas fa-caret-up"></i></span></h3>
+                                    <h5 className="font-bold uppercase text-gray-400">Productive Hours</h5>
+                                    <h3 className="font-bold text-3xl text-gray-600">5 Hours </h3>
                                 </div>
                             </div>
                         </div>
