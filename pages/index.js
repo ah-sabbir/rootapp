@@ -4,24 +4,45 @@ import { useEffect, useState } from 'react'
 import Navigation from '../components/navigation/navBar'
 import logoImage from '../public/favicon.png'
 import axios from 'axios'
+import { reject } from 'lodash'
 
 export default function Home() {
     const [data, setData] = useState([])
-
+    const [keyPressCount, setKeyPressCount] = useState(0)
+    const [mouseCount, setMouseCount] = useState(0)
+    const [productiveTime, setProductiveTime] = useState(0)
     useEffect(()=>{
         loadData()
-    })
+    },[])
 
-    const loadData = async ()=>{
-        const res = await fetch("https://jsonplaceholder.typicode.com/users",
+    const loadData = ()=>{
+        fetch("http://127.0.0.1:2000/api/tasks",
         {
+            method:'GET',
             mode: 'cors',
             headers: {
               'Access-Control-Allow-Origin':'*'
             }
         }
         )
-        console.log(await res.json())
+        .then(res=> res.json())
+        .then(data => {
+            let pTime = 0
+            data.data.forEach(element => {
+                const event = element.events
+                if(event){
+                    setMouseCount(Math.round((event.mousemove+event.mouseclick)/2,2))
+                    setKeyPressCount(event.keypress) 
+                }
+                if(element.cpuTime){
+                    pTime += Number(element.cpuTime)
+                }
+            });
+            setProductiveTime(pTime)
+        })
+        .catch(reject=>{
+            console.log(reject)
+        })
     }
 
     const myLoader = ({ src }) => {
@@ -162,7 +183,7 @@ export default function Home() {
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
                                     <h5 className="font-bold uppercase text-gray-400">Productive Hours</h5>
-                                    <h3 className="font-bold text-3xl text-gray-600">5 Hours </h3>
+                                    <h3 className="font-bold text-3xl text-gray-600">{Math.round(productiveTime/3600,0)} Hours </h3>
                                 </div>
                             </div>
                         </div>
@@ -206,8 +227,8 @@ export default function Home() {
                                     <div className="rounded p-3 bg-red-600"><i className=" fa-2x fa-fw fa-inverse"></i></div>
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
-                                    <h5 className="font-bold uppercase text-gray-400">another</h5>
-                                    <h3 className="font-bold text-3xl text-gray-600">3 <span className="text-red-500"><i className="fas fa-caret-up"></i></span></h3>
+                                    <h5 className="font-bold uppercase text-gray-400">Mouse, keyboard</h5>
+                                    <h3 className="font-bold text-3xl text-gray-600">{mouseCount} % , {keyPressCount} % <span className="text-red-500"><i className="fas fa-caret-up"></i></span></h3>
                                 </div>
                             </div>
                         </div>
