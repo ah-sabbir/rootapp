@@ -16,7 +16,8 @@ export default function Home() {
     },[])
 
     const loadData = ()=>{
-        fetch("http://127.0.0.1:2000/api/tasks",
+        console.log("data comes from global app")
+        fetch("https://task-time-m.herokuapp.com/api/tasks",
         {
             method:'GET',
             mode: 'cors',
@@ -28,17 +29,19 @@ export default function Home() {
         .then(res=> res.json())
         .then(data => {
             let pTime = 0
+            let kCount = 0
             data.data.forEach(element => {
                 const event = element.events
                 if(event){
                     setMouseCount(Math.round((event.mousemove+event.mouseclick)/2,2))
-                    setKeyPressCount(event.keypress) 
+                    kCount +=  Number(event.keypress)
                 }
                 if(element.cpuTime){
                     pTime += Number(element.cpuTime)
                 }
             });
             setProductiveTime(pTime)
+            setKeyPressCount(Math.round(kCount/10,2))
         })
         .catch(reject=>{
             console.log(reject)
@@ -183,7 +186,7 @@ export default function Home() {
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
                                     <h5 className="font-bold uppercase text-gray-400">Productive Hours</h5>
-                                    <h3 className="font-bold text-3xl text-gray-600">{Math.round(productiveTime/3600,0)} Hours </h3>
+                                    <h3 className="font-bold text-3xl text-gray-600">{Math.floor(productiveTime/(60*60*60)) } Hours </h3>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +231,7 @@ export default function Home() {
                                 </div>
                                 <div className="flex-1 text-right md:text-center">
                                     <h5 className="font-bold uppercase text-gray-400">Mouse, keyboard</h5>
-                                    <h3 className="font-bold text-3xl text-gray-600">{mouseCount} % , {keyPressCount} % <span className="text-red-500"><i className="fas fa-caret-up"></i></span></h3>
+                                    <h3 className="font-bold text-3xl text-gray-600">{mouseCount +"%, "+ keyPressCount +"%"}<span className="text-red-500"><i className="fas fa-caret-up"></i></span></h3>
                                 </div>
                             </div>
                         </div>
