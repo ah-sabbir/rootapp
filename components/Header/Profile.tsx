@@ -10,7 +10,7 @@ class Profile extends Component<ProfileProps> {
     state = {
         isUserMenu: false,
         isNavbar: false,
-        profileImageUrl:"https://i.pravatar.cc/400",
+        profileImageUrl:"i.pravatar.cc/400",
     }
     constructor(props: ProfileProps) {
         super(props)
