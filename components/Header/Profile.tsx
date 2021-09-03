@@ -6,7 +6,7 @@ interface ProfileProps {
     getIsHidden: (value: boolean) => void;
 }
 class Profile extends Component<ProfileProps> {
-     ImgLoader({ src }){
+     ImgLoader(src){
       return src
     }
     
