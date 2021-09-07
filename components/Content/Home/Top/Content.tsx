@@ -16,12 +16,19 @@ const Content = () => {
 
     return (
         <div className="flex flex-wrap">
-            <SubContent logo={aveLogu} name="TOTAL WORKING HOURS" amount="240 Hours" icon={ave} />
+            {/* <SubContent logo={aveLogu} name="TOTAL WORKING HOURS" amount="240 Hours" icon={ave} />
             <SubContent logo={userLogu} name="Total Users" amount="222" icon={user} />
             <SubContent logo={nUserLogu} name="Total Users" amount="222" icon={nUser} />
             <SubContent logo={serUptiem} name="Server Uptime" amount="14" icon="days" />
             <SubContent logo={toDoLis} name="To To List" amount="7" icon="tasks" />
-            <SubContent logo={essus} name="Essuse" amount="3" icon={essue} />
+            <SubContent logo={essus} name="Essuse" amount="3" icon={essue} /> */}
+
+            <SubContent name="TOTAL WORKING HOURS" amount="240 Hours" />
+            <SubContent name="Productivity" amount="85%" />
+            <SubContent name="Productive Time" amount="7 Hours" />
+            <SubContent name="Total Productive Time" amount="180 Hours" />
+            <SubContent name="Keystrokes" amount="75%" />
+            <SubContent name="Essuse" amount="3" />
         </div>
     )
 }

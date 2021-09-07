@@ -1,6 +1,5 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import React from 'react'
+import type { NextPage } from 'next';
+import React from 'react';
 import AppLayout from '../../AppLayout/AppLayout'
 import Task from '../../components/Content/Tasks/Index'
 
