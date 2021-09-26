@@ -34,12 +34,12 @@ const data = {
   ],
 };
 
-const PieChart = () => (
+const PieChart = (props:any) => (
   <>
     <div className='header'>
-      <h1 className='title text-white'>Pie Chart</h1>
-      <div className='links text-gray-500'>
-          sub title
+      <h1 className='title text-white text-center'>{props.chartTitle}</h1>
+      <div className='links text-gray-500 text-center'>
+          {props.chartSubTitle}
       </div>
     </div>
     <Pie data={data} />

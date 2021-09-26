@@ -1,5 +1,6 @@
 import ContentTop from "./Top/Content";
 import ContentDown from "./Down/Content";
+import Footer from "../../Footer/Footer";
 
 
 const Main = () => {

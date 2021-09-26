@@ -38,8 +38,8 @@ const SubContent = (props:props) => {
                     {/* {props.logo} */}
                 </div>
                 <div className="flex-1 text-right md:text-center">
-                    <h5 className="font-bold uppercase text-gray-400">{props.name}</h5>
-                    <h3 className="font-bold text-3xl text-gray-600">{props.amount}</h3>
+                    <h5 className="font-bold uppercase text-gray-400 text-center">{props.name}</h5>
+                    <h3 className="font-bold text-3xl text-gray-600 text-center">{props.amount}</h3>
                 </div>
             </div>
         </div>

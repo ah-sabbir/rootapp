@@ -23,9 +23,9 @@ const Content = () => {
             <SubContent logo={serUptiem} name="Server Uptime" amount="14" icon="days" />
             <SubContent logo={toDoLis} name="To To List" amount="7" icon="tasks" />
             <SubContent logo={essus} name="Essuse" amount="3" icon={essue} /> */}
-            <SubContent />
-            <SubContent />
-            <SubContent />
+            <SubContent item_title={"item chart 1"} item_subTitle={"this is sub title of item 1"}/>
+            <SubContent item_title={"item chart 2"} item_subTitle={"this is sub title of item 2"}/>
+            <SubContent item_title={"item chart 3"} item_subTitle={"this is sub title of item 3"}/>
             {/* <PieChart/> */}
         </div>
     )
